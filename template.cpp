@@ -2,6 +2,7 @@
 #include "template.h"
 #include "Background.h"
 #include "Character.h"
+#include "Direction.h"
 
 // Namespace
 using namespace AGK;
@@ -9,48 +10,38 @@ using namespace AGK;
 app App;
 
 Background background;
-Character character;
+int font;
+int fpsDisplay;
 
 void app::Begin(void)
 {
-	agk::SetWindowTitle("Avoud the stuff");
-	agk::SetWindowSize(1280, 720, 0);
+	agk::SetWindowTitle("Avoid the stuff");
 	agk::SetVirtualResolution(1280, 720);
 	agk::SetSyncRate(60, 0);
 	agk::EnableClearColor(0);
 	agk::SetScissor(0, 0, 0, 0);
 
 	background.CreateBackground();
-	character.SetUp(0);
+
+	font = agk::LoadImage("media/Font/Hammersmith one.png");
+	fpsDisplay = agk::CreateText("This is FPS:");
+	agk::SetTextFontImage(fpsDisplay, font);
+	agk::SetTextSize(fpsDisplay, 24);
+	agk::SetTextColor(fpsDisplay, 255, 64, 64, 255);
+	agk::SetTextPosition(fpsDisplay, 10, 10);
 }
 
 void app::Loop (void)
 {
 
-	if (agk::GetJoystickX() < 0)
+	//If ESC is pressed, exit the app.
+	if (agk::GetRawKeyState(27))
 	{
-		character.SetFacingDirection(Direction::Left);
-	}
-	if (agk::GetJoystickX() > 0)
-	{
-		character.SetFacingDirection(Direction::Right);
-	}
-	if (agk::GetJoystickY() < 0)
-	{
-		character.SetFacingDirection(Direction::Up);
-	}
-	if (agk::GetJoystickY() > 0)
-	{
-		character.SetFacingDirection(Direction::Down);
+		exit(0);
 	}
 
-	character.Update();
+	agk::SetTextString(fpsDisplay, agk::Str(agk::ScreenFPS()));
 
-	agk::Print(agk::ScreenFPS());
-	agk::PrintC("X: ");
-	agk::Print(agk::Str(agk::GetJoystickX()));
-	agk::PrintC("Y: ");
-	agk::Print(agk::Str(agk::GetJoystickY()));
 	agk::Sync();
 
 }

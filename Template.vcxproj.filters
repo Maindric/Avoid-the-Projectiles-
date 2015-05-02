@@ -3,30 +3,49 @@
   <ItemGroup>
     <ClCompile Include="Core.cpp" />
     <ClCompile Include="template.cpp" />
+    <ClCompile Include="Animation.cpp">
+      <Filter>Sources\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>Sources\Background</Filter>
+    </ClCompile>
     <ClCompile Include="Background.h">
-      <Filter>Headers</Filter>
+      <Filter>Sources\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Sources\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Direction.cpp">
+      <Filter>Sources\Direction</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="template.h" />
+    <ClInclude Include="Animation.h">
+      <Filter>Sources\Animation</Filter>
+    </ClInclude>
     <ClInclude Include="Character.h">
-      <Filter>Headers</Filter>
+      <Filter>Sources\Character</Filter>
     </ClInclude>
     <ClInclude Include="Direction.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="template.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Animation.h">
-      <Filter>Headers</Filter>
+      <Filter>Sources\Direction</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Headers">
-      <UniqueIdentifier>{74da1051-ba31-4eb3-a3e8-a065829ad92b}</UniqueIdentifier>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{91938e01-4acc-4f9e-af8c-8a25c5ab0157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Animation">
+      <UniqueIdentifier>{ca0958b4-98e0-42c6-8cb4-7b232887fbe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Background">
+      <UniqueIdentifier>{44000f05-e0c4-4729-8778-eeb63a743d97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Character">
+      <UniqueIdentifier>{219e9a64-14b0-45b4-abde-07f7b0af815b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Direction">
+      <UniqueIdentifier>{4673a475-894c-46da-97c9-49db3689dc85}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

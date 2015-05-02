@@ -4,11 +4,11 @@
 // Link to GDK libraries
 #include "AGK.h"
 
-#define DEVICE_WIDTH 1024
-#define DEVICE_HEIGHT 768
+#define DEVICE_WIDTH 1920
+#define DEVICE_HEIGHT 1080
 #define DEVICE_POS_X 32
 #define DEVICE_POS_Y 32
-#define FULLSCREEN false
+#define FULLSCREEN true
 
 // Global values for the app
 class app
