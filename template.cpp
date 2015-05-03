@@ -3,6 +3,8 @@
 #include "Background.h"
 #include "Character.h"
 #include "Direction.h"
+#include "Text.h"
+#include <string>
 
 // Namespace
 using namespace AGK;
@@ -10,8 +12,7 @@ using namespace AGK;
 app App;
 
 Background background;
-int font;
-int fpsDisplay;
+Text fpsDisplay;
 
 void app::Begin(void)
 {
@@ -22,13 +23,6 @@ void app::Begin(void)
 	agk::SetScissor(0, 0, 0, 0);
 
 	background.CreateBackground();
-
-	font = agk::LoadImage("media/Font/Hammersmith one.png");
-	fpsDisplay = agk::CreateText("This is FPS:");
-	agk::SetTextFontImage(fpsDisplay, font);
-	agk::SetTextSize(fpsDisplay, 24);
-	agk::SetTextColor(fpsDisplay, 255, 64, 64, 255);
-	agk::SetTextPosition(fpsDisplay, 10, 10);
 }
 
 void app::Loop (void)
@@ -40,7 +34,8 @@ void app::Loop (void)
 		exit(0);
 	}
 
-	agk::SetTextString(fpsDisplay, agk::Str(agk::ScreenFPS()));
+	//fpsDisplay.SetText(std::to_string(agk::ScreenFPS()));
+
 
 	agk::Sync();
 
