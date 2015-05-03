@@ -8,6 +8,7 @@ Text::Text(void)
 		defaultImage = agk::LoadImage("media/Font/Hammersmith One.png");
 	}
 	agk::SetTextFontImage(agkText, defaultImage);
+	agk::SetTextSize(agkText, 24);
 }
 
 Text::Text(std::string textImage)
@@ -20,4 +21,9 @@ Text::Text(std::string textImage)
 void Text::SetText(std::string setText)
 {
 	text = (char*)setText.c_str();
+}
+
+void Text::SetDefaultFont(int fontImg)
+{
+	defaultImage = fontImg;
 }

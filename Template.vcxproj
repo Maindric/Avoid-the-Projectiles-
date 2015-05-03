@@ -117,12 +117,14 @@
     <ClCompile Include="Core.cpp" />
     <ClCompile Include="Direction.cpp" />
     <ClCompile Include="template.cpp" />
+    <ClCompile Include="Text.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="Direction.h" />
     <ClInclude Include="template.h" />
+    <ClInclude Include="Text.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

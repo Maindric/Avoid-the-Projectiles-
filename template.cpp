@@ -34,7 +34,7 @@ void app::Loop (void)
 		exit(0);
 	}
 
-	//fpsDisplay.SetText(std::to_string(agk::ScreenFPS()));
+	fpsDisplay.SetText(std::to_string(agk::ScreenFPS()));
 
 
 	agk::Sync();

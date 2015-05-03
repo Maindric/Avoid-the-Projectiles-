@@ -18,6 +18,9 @@
     <ClCompile Include="Direction.cpp">
       <Filter>Sources\Direction</Filter>
     </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>Sources\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="template.h" />
@@ -29,6 +32,9 @@
     </ClInclude>
     <ClInclude Include="Direction.h">
       <Filter>Sources\Direction</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Sources\Text</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +52,9 @@
     </Filter>
     <Filter Include="Sources\Direction">
       <UniqueIdentifier>{4673a475-894c-46da-97c9-49db3689dc85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Text">
+      <UniqueIdentifier>{3f5a8d43-55d8-415f-a716-55552ebaad8f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
