@@ -23,6 +23,8 @@ void app::Begin(void)
 	agk::SetScissor(0, 0, 0, 0);
 
 	background.CreateBackground();
+
+	fpsDisplay.Setup("media/Font/Hammersmith One.png");
 }
 
 void app::Loop (void)
@@ -44,5 +46,4 @@ void app::Loop (void)
 
 void app::End (void)
 {
-
 }

@@ -3,14 +3,12 @@
 
 class Text
 {
-	static int defaultImage;
-
-	int image;
-	int agkText;
+	unsigned int image;
+	unsigned int agkText;
 	std::string text;
 public:
-	Text(void);
-	Text(std::string textImage);
+	//Text();
+	//Text(std::string textImage);
+	void Setup(std::string textImage);
 	void SetText(std::string setText);
-	static void SetDefaultFont(int fontImg);
 };
