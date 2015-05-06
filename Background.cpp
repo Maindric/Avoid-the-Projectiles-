@@ -2,7 +2,7 @@
 
 void Background::CreateBackground()
 {
-	int image = agk::LoadImage("media//background.png");
+	int image = agk::LoadImage("media\\background.png");
 	spriteNumber = agk::CreateSprite(image);
 }
 

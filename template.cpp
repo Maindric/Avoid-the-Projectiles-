@@ -13,6 +13,9 @@ app App;
 
 Background background;
 Text fpsDisplay;
+Text height;
+Text width;
+Character Player;
 
 void app::Begin(void)
 {
@@ -24,7 +27,16 @@ void app::Begin(void)
 
 	background.CreateBackground();
 
-	fpsDisplay.Setup("media/Font/Hammersmith One.png");
+	fpsDisplay.Setup();
+	height.Setup();
+	width.Setup();
+
+	width.SetText("Width: " + std::to_string(agk::GetDeviceWidth()));
+	width.SetPosition(0.0f, 24.0f);
+	height.SetText("Height: " + std::to_string(agk::GetDeviceHeight()));
+	height.SetPosition(0.0f, 48.0f);
+
+	Player.Setup();
 }
 
 void app::Loop (void)

@@ -36,6 +36,9 @@
     <ClInclude Include="Text.h">
       <Filter>Sources\Text</Filter>
     </ClInclude>
+    <ClInclude Include="AnimationTypes.h">
+      <Filter>Sources\Animation</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Sources">

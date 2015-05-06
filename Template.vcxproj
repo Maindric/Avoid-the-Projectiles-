@@ -121,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationTypes.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="Direction.h" />
     <ClInclude Include="template.h" />
