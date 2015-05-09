@@ -1,15 +1,26 @@
 #include "template.h"
 #include "Direction.h"
 #include "Animation.h"
+#include <map>
+#include <string>
 
-class Character
-{
-	int sprite;
-	int image;
-	int atlasImages[128];
-public:
-	void Setup();
-	void Update();
-	void MoveCaracter(float speed);
-	void SetFacingDirection();
-};
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+	class Character
+	{
+		int sprite;
+		int spriteImg[128];
+		int image;
+		std::map<std::string, Animation> anim;
+	public:
+		void Setup();
+		void Update(float t);
+		void MoveCaracter(float speed);
+		void SetFacingDirection(Direction::Dir dir);
+	};
+
+#ifdef __cplusplus
+}
+#endif

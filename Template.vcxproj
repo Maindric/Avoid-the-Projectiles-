@@ -115,17 +115,21 @@
     <ClCompile Include="Background.h" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="Core.cpp" />
-    <ClCompile Include="Direction.cpp" />
+    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="template.cpp" />
     <ClCompile Include="Text.cpp" />
+    <ClCompile Include="Time.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
     <ClInclude Include="AnimationTypes.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="Direction.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="string.h" />
     <ClInclude Include="template.h" />
     <ClInclude Include="Text.h" />
+    <ClInclude Include="Time.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,10 +1,12 @@
 // Includes
 #include "template.h"
-#include "Background.h"
 #include "Character.h"
 #include "Direction.h"
 #include "Text.h"
-#include <string>
+#include "string.h"
+#include "Entity.h"
+#include "Background.h"
+#include "Time.h"
 
 // Namespace
 using namespace AGK;
@@ -12,10 +14,12 @@ using namespace AGK;
 app App;
 
 Background background;
+Time t;
+
 Text fpsDisplay;
-Text height;
-Text width;
 Character Player;
+
+Entity testEnt;
 
 void app::Begin(void)
 {
@@ -28,19 +32,18 @@ void app::Begin(void)
 	background.CreateBackground();
 
 	fpsDisplay.Setup();
-	height.Setup();
-	width.Setup();
-
-	width.SetText("Width: " + std::to_string(agk::GetDeviceWidth()));
-	width.SetPosition(0.0f, 24.0f);
-	height.SetText("Height: " + std::to_string(agk::GetDeviceHeight()));
-	height.SetPosition(0.0f, 48.0f);
 
 	Player.Setup();
+
+	t.Setup();
+
+	testEnt.Setup();
+	testEnt.Generate(60,80);
 }
 
 void app::Loop (void)
 {
+	t.Update();
 
 	//If ESC is pressed, exit the app.
 	if (agk::GetRawKeyState(27))
@@ -48,8 +51,11 @@ void app::Loop (void)
 		exit(0);
 	}
 
-	fpsDisplay.SetText(std::to_string(agk::ScreenFPS()));
+	testEnt.Update(t.GetUpdateTime());
 
+	fpsDisplay.SetText(String::to_string(agk::ScreenFPS()));
+
+	Player.Update(t.GetUpdateTime());
 
 	agk::Sync();
 

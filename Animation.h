@@ -9,7 +9,8 @@ class Animation
 	int startFrame;
 	int endFrame;
 public:
-	void Setup(float spd, int firstFrame, int lastFrame);
+	Animation();
+	Animation(float spd, int firstFrame, int lastFrame);
 	int GetStartFrame();
 	int GetEndFrame();
 	float GetSpeed();

@@ -15,11 +15,14 @@
     <ClCompile Include="Character.cpp">
       <Filter>Sources\Character</Filter>
     </ClCompile>
-    <ClCompile Include="Direction.cpp">
-      <Filter>Sources\Direction</Filter>
-    </ClCompile>
     <ClCompile Include="Text.cpp">
       <Filter>Sources\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Sources\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>Sources\Time</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -38,6 +41,15 @@
     </ClInclude>
     <ClInclude Include="AnimationTypes.h">
       <Filter>Sources\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="string.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Sources\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>Sources\Time</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +70,12 @@
     </Filter>
     <Filter Include="Sources\Text">
       <UniqueIdentifier>{3f5a8d43-55d8-415f-a716-55552ebaad8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Entity">
+      <UniqueIdentifier>{35f8d348-059e-45fd-b09a-8871b4964a4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Time">
+      <UniqueIdentifier>{3b340626-356e-4bc6-95cf-cd300646afed}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
