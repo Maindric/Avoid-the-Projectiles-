@@ -1,5 +1,3 @@
-#include "template.h"
-
 class Background
 {
 	int spriteNumber;

@@ -1,3 +1,4 @@
+#include "template.h"
 #include "Background.h"
 
 void Background::CreateBackground()

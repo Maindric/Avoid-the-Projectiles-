@@ -24,6 +24,15 @@
     <ClCompile Include="Time.cpp">
       <Filter>Sources\Time</Filter>
     </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Sources\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio.cpp">
+      <Filter>Sources\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Score.cpp">
+      <Filter>Sources\Score</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="template.h" />
@@ -51,6 +60,15 @@
     <ClInclude Include="Time.h">
       <Filter>Sources\Time</Filter>
     </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Sources\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.h">
+      <Filter>Sources\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Score.h">
+      <Filter>Sources\Score</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Sources">
@@ -76,6 +94,15 @@
     </Filter>
     <Filter Include="Sources\Time">
       <UniqueIdentifier>{3b340626-356e-4bc6-95cf-cd300646afed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Button">
+      <UniqueIdentifier>{1d1d3dad-2168-4011-a040-f99cba165521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Audio">
+      <UniqueIdentifier>{155e4ee4-b9c1-4135-95b0-05802f9cc244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Score">
+      <UniqueIdentifier>{32f212b9-d3d0-4761-8b61-e49e4ff0940b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

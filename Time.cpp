@@ -3,6 +3,7 @@
 void Time::Setup()
 {
 	last_frame_time = agk::Timer();
+	start_time = last_frame_time;
 }
 
 void Time::Update()
@@ -20,4 +21,9 @@ float Time::GetCurrentFrameTime()
 float Time::GetUpdateTime()
 {
 	return cur_frame_dif;
+}
+
+float Time::GetTotalTime()
+{
+	return cur_frame_time - start_time;
 }
